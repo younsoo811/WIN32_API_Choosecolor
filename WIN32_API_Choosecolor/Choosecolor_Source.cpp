@@ -24,7 +24,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	WndClass.hIcon = LoadIcon(NULL, IDI_APPLICATION);
 	WndClass.hCursor = LoadCursor(NULL, IDC_ARROW);
 	WndClass.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
-	WndClass.lpszMenuName = NULL;
+	/*WndClass.lpszMenuName = NULL;*/
 	WndClass.lpszClassName = _T("Window Class Name");
 	WndClass.lpszMenuName = MAKEINTRESOURCE(IDR_MENU1);
 
@@ -119,7 +119,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg,
 		dx = LOWORD(lParam);
 		dy = HIWORD(lParam);
 
-		isClick = true;
+		//isClick = true;
 		//InvalidateRgn(hwnd, NULL, TRUE);
 		break;
 
