@@ -90,7 +90,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg,
 		hdc = BeginPaint(hwnd, &ps);
 
 		//선 색상 넣기
-		(HPEN)SelectObject(hdc, CreatePen(PS_DOT, 10, color));
+		(HPEN)SelectObject(hdc, CreatePen(PS_SOLID, 1, color));
 		//도형 색 넣기
 		//(HBRUSH)SelectObject(hdc, CreateSolid(color));
 
