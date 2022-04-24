@@ -77,6 +77,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg,
 
 	CHOOSECOLOR COLOR;
 	static COLORREF tmp[16], color;
+	HPEN hPen, OldPen;
 	/*HBRUSH hBrush, OldBrush;*/
 	int i;
 
@@ -92,7 +93,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg,
 		//선 색상 넣기
 		(HPEN)SelectObject(hdc, CreatePen(PS_SOLID, 1, color));
 		//도형 색 넣기
-		//(HBRUSH)SelectObject(hdc, CreateSolid(color));
+		//(HBRUSH)SelectObject(hdc, CreateSolidBrush(color));
 
 		if (select == 1)
 		{
